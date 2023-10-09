@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lota', sans-serif;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar {
+  display: flex;
+  padding: 25px 40px 20px;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #77cef0;
+  position: fixed;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.year-back {
+  display: flex;
+}
+
+.year {
+  font-size: 20px;
+  margin-top: 4px; 
+}
+
+.icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.back-icon {
+  font-size: 30px;
+} 
+
+button {
+  background: transparent;
+  border: none;
+}
+
+/* navbar.css */
+.input {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; 
+  padding: 8px;
+  margin: 1rem;
+  width: 30%;
+  border-radius: 3px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.hero-section {
+  padding-top: 4.4rem;
+}
+
+.hero-section img {
+  height: 300px;
+  width: 100%;
+}
+
+
+.main-contanier {
+  display: flex;
+  flex-direction: column;
+}
+
+/* homepage */
+.country-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.states {
+  font-size: 20px;
+  text-align: start;
+  padding: 20px;
+  border: 1px solid #c2bdbd;
+  margin: 2px;
+}
+
+.contries {
+  box-shadow: 5px 5px 5px 0px #c2bdbd;
+  height: 20rem;
+  width: 350px;
+}
+
+.contries img {
+  width: 100%;
+  height: 12rem;
+}
+
+.capation {
+  align-items: start;
+  text-align: start;
+  padding: 3%;
+}
+
+.loading {
+  border: 1px solid #3a86ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 220px 190px 20px 190px;
+}
+
+.capation p {
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.capation p span {
+  font-weight: 300;
+}
+
+/* detail page */
+.detail-countiner {
+  display: flex;
+}
+
+.country-name {
+  text-align: center;
+  padding: 12px;
+} 
+
+.detail-page {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-page-flag {
+  margin-left: 10rem;
+}
+
+.detail-page-flag img {
+  height: 20rem;
+}
+
+.detail-page-info {
+  text-align: justify;
+}
+
+.detail-page-info p {
+  border: 1px solid #0ab0f2;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 8px;
+  padding: 20px 35rem 20px 20px;
+}
+
+.detail-page-info p span {
+  font-weight: 300;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px;
+  }
+  .nav {
+    gap: 10px;
+  }
+
+  .detail-page {
+    margin: 6rem auto;
+  }
+  .input {
+    width: 20rem;
+  }
+  .hero-section img{
+    height: 12rem;
+  }
+  .input {
+    margin: 12px;
+    padding: 4px;
+  }
+  .country-list {
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .detail-page-flag {
+    margin-left: 1rem;
+  }
+  .detail-page-flag img {
+    height: 10rem;
+    margin-left: 1.2rem;
+    width: 82%;
+  }
+  .detail-page-info p {
+    padding: 12px 6rem 12px 12px;
+  }
+  .contries {
+    width: 100%;
+  }
+}
