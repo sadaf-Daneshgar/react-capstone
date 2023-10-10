@@ -213,6 +213,8 @@ If you like this project, kindly drop a start for the [repository](https://githu
 
 - I would like to express my heartfelt gratitude to [**Microvere**](https://www.microverse.org/?grsf=mohammad-a-nbtazu) for the invaluable learning experience they have provided. 
 
+- I would like to express my heartfelt gratitude to Behance for providing the amazing [design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) inspiration that served as the foundation for my country web application. Especial thank to its designer **Nelson Sakwa**.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->

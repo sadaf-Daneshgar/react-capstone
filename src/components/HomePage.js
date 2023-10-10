@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import Navbar from './Navbar';
 import { fetchCountries } from '../redux/countries/countriesSlice';
 import bachground from '../image/background.jpg';
 
@@ -21,7 +22,9 @@ function HomePage() {
     setSearchQuery(e.target.value);
   };
 
-  const filteredCountries = countries.filter((country) => country.name.toLowerCase().includes(searchQuery.toLowerCase()));
+  const filteredCountries = countries
+    ? countries.filter((country) => country.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    : [];
 
   if (isLoading) {
     return (
@@ -43,6 +46,7 @@ function HomePage() {
 
   return (
     <>
+      <Navbar />
       <div className="hero-section">
         <img src={bachground} alt="backround img" />
       </div>

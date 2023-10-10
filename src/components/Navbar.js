@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {
   BiChevronLeft, BiCog, BiMicrophone, BiMoon,
 } from 'react-icons/bi';
 import '../style/navbar.css';
 
-function Navbar() {
+function Navbar({ selectedCountry }) {
   const [theme, setTheme] = useState('light');
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -13,11 +14,11 @@ function Navbar() {
   const handleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
-      document.body.style.backgroundColor = '#0ab0f2';
+      document.body.style.backgroundColor = '#0e9c9c';
     } else {
       setTheme('light');
       document.body.style.color = '#202c37';
-      document.body.style.backgroundColor = '#fff';
+      document.body.style.backgroundColor = '#202c37';
     }
   };
 
@@ -38,7 +39,11 @@ function Navbar() {
         )}
       </li>
       <li className="nav-item">
-        <h2>Countries</h2>
+        {selectedCountry ? (
+          <h2>{selectedCountry}</h2>
+        ) : (
+          <h2>Countries</h2>
+        )}
       </li>
       <li>
         <ul className="nav">
@@ -56,5 +61,13 @@ function Navbar() {
     </ul>
   );
 }
+
+Navbar.propTypes = {
+  selectedCountry: PropTypes.string,
+};
+
+Navbar.defaultProps = {
+  selectedCountry: '',
+};
 
 export default Navbar;
