@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import '../style/navbar.css';
 
 function DetailPage() {
-  const { countries } = useSelector((store) => store.countries);
+  const { countries } = useSelector((state) => state.countries);
 
   const { name } = useParams();
   const findCountry = countries.find((country) => country.name === name);

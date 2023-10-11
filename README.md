@@ -64,7 +64,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- 🔰 **[React-based project]**
+- 🔰 **[React-based project]**  
 - 🔰 **[Well Code structure]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -72,7 +72,8 @@
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- ✅ Click [here]() to see the project
+- ✅ Click [here](https://react-capstone-yu30.onrender.com/) to see the project
+- ✅ Click [here](https://drive.google.com/file/d/1D0V3oR3TSbBye6yaxzRSxguqFV4aRRdS/view?usp=sharing) to see the video presentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
